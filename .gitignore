@@ -1,6 +1,10 @@
-# coldriver stuff
-data/
+.envrc
 
+
+doc/
+!doc/pavla/Logo.png
+data/
+requests/http-client.private.env.json
 
 #
 # Are you tempted to edit this file?

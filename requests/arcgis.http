@@ -1,0 +1,44 @@
+### ArcGIS - Geocoding
+POST https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?token={{arcgis_api_key}}
+Content-Type: application/x-www-form-urlencoded
+
+f=pjson&address=kongresni trg, ljubljana
+
+### ArcGIS - Place Search
+POST https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?token={{arcgis_api_key}}
+Content-Type: application/x-www-form-urlencoded
+
+f=pjson&address=Starbucks&location=-122.4194,37.7749&outfields=PlaceName,Place_addr
+
+### ArcGIS - Auto Suggest
+POST https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer?token={{arcgis_api_key}}
+Content-Type: application/x-www-form-urlencoded
+
+f=pjson&text=BTC Ljubljana
+
+### PromInfo - Bicike(LJ)
+GET https://prominfo.projekti.si/web/api/MapService/Query/lay_bicikelj/query?returnGeometry=true&where=1%3D1&outSr=4326&outFields=*&inSr=4326&geometry=%7B%22xmin%22%3A14.0321%2C%22ymin%22%3A45.7881%2C%22xmax%22%3A14.8499%2C%22ymax%22%3A46.218%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelContains&f=json
+
+### PromInfo - Taksi
+GET https://prominfo.projekti.si/web/api/MapService/Query/lay_taxi/queryreturnGeometry=true&where=1%3D1&outSr=4326&outFields=*&inSr=4326&geometry=%7B%22xmin%22%3A14.0321%2C%22ymin%22%3A45.7881%2C%22xmax%22%3A14.8499%2C%22ymax%22%3A46.218%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelContains&f=json
+
+### PromInfo - Railroad
+GET https://prominfo.projekti.si/web/api/MapService/Query/lay_zelezniske_postaje/query?returnGeometry=true&where=1%3D1&outSr=4326&outFields=*&inSr=4326&geometry=%7B%22xmin%22%3A14.0321%2C%22ymin%22%3A45.7881%2C%22xmax%22%3A14.8499%2C%22ymax%22%3A46.218%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelContains&f=json
+
+### LPP Števci - bicicles
+GET https://{{microbit_user}}:{{microbit_pass}}@mikrobit.jplpt.si/bicycles_georss_si.xml
+
+### LPP Števci - counters
+GET https://{{microbit_user}}:{{microbit_pass}}@mikrobit.jplpt.si/stevci_georss_si.xml
+
+### LPP Bus
+
+
+
+
+
+
+
+
+
+
